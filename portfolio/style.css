@@ -86,9 +86,12 @@ a:hover {
 }
 
 .hamburger-menu {
-  position: relative;
-  display: inline-block;
+  position: absolute;
+  top: 10px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
+  z-index: 1000;
 }
+
 
 .hamburger-icon {
   display: flex;
@@ -472,7 +475,7 @@ footer p {
 .text-primary,h1 {
   /* --bs-text-opacity: 1;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important; */
-  font-size:29px;
+  font-size:35px;
 }
 .lined {
   background: url(https://appx-static.akamai.net.in/tharunspeaks/underline.svg) no-repeat;

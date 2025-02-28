@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="shortcut icon" href="./assets/1000094987-modified.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+    <nav id="desktop-nav" >
+      <div class="logo " >
+        <span  class="lined text-primary"class="brace" style="color: #e9ff09;">Prashant Singamsetti</span>
+     </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div   class="lined text-primary" class="logo" style="color: #e9ff09;">Prashant Singamsetti</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a class="lined text-primary"href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a class="lined text-primary"href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a class="lined text-primary"href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a class="lined text-primary"href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container " data-aos="fade-down-right" data-aos-anchor-placement="center-bottom"data-aos-duration="1000">
+        <img src="./assets/updated.jpg"alt="prashant singamsetti profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="gradient-text" class="title animate__animated animate__zoomInLeft animate__infinite ">Prashant Singamsetti</h1>
+        <p class="section__text__p2">Full stack Python Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/prashantsingamsettiresume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div  id="socials-container">
+          <img
+            src="./assets/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.webp"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/prashant-singamsetti-2894a7268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app '"
+          />
+          <img
+            src="./assets/icone-github-rouge.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/prashantsingamsetti1705'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1  class="underlined text-primary"class="title" style="color: #e9ff09;">About Me</h1>
+      <div data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"data-aos-duration="1000"class="section-container fs-5 mx-auto mb-5 aos-init aos-animate">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"data-aos-duration="1000" class="section__pic-container ">
+          <img 
+            src="./assets/IMG_20230301_230150_949.jpg"
+            alt="Profile picture"
+            class="about-pic "
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <!-- <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div> -->
+            <div   data-aos="fade-down-left"
+            data-aos-anchor-placement="center-bottom"data-aos-duration="1000"class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p style="color: black;">B.tech. Bachelor of Technology <br />ECE. Electronics and Communication Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As a self-motivated and dedicated fresher, I am deeply passionate about my field and committed to hard work. I am actively seeking an opportunity to join an organization where I can face stimulating challenges and leverage my skills and knowledge to contribute meaningfully to the growth and success of the company.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="skills">
+      <div>
+      <span>
+        <p class="section__text__p1">Explore My</p>
+      <h1 class="underlined text-primary" class="title" style="color: #e9ff09;">Skills</h1>
+    </span>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"data-aos-duration="1000"class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/Python-Transparent-Background.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PYTHON</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mysql OIP (1).jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MYSQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mongodb OIP (1).jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MONGO-DB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/django.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>DJANGO</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/flask-logo-png-transparent.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>FLASK</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/rest_api.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>RESTAPI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div data-aos="fade-down"
+          data-aos-anchor-placement="center-bottom"data-aos-duration="1000"class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/logo-2582748_960_720.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/css download (1).jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/js.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JAVASCRIPT</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/bt.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Boot Strap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/icone-github-rouge.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>GitHub</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/docker OIP (1).jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="underlined text-primary"class="title" style="color: #e9ff09;">Projects</h1>
+      <div data-aos="fade-up"data-aos-anchor-placement="center-bottom"data-aos-duration="1000"class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1  class="underlined text-primary"data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"data-aos-duration="1000"class="title" style="color: #e9ff09 ;">Contact Me</h1>
+      <div  data-aos="fade-up"class="contact-info-upper-container" >
+        <div class="contact-info-container" >
+          <img
+            src="https://tharunspeaks.in/Assets/email.svg"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:prashantsingamsetti123@gmail.com">prashantsingamsetti123@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.webp"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/prashant-singamsetti-2894a7268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <hr style="color: #e9ff09;">
+      <p style="color:yellow;">Copyright &#169; 2024 Prashant Singamsetti. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();
+    </script>
+  </body>
+</html>
